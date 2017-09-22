@@ -45,6 +45,16 @@ nav, aside {
 	min-width: 200px;
 }
 
+nav {
+	border-right: 1px solid #eee;
+}
+
+.tagline {
+	font-weight: bolder;
+	color: rgba(0,0,0,.33);
+	margin: -10 0 10 0;
+}
+
 .summary-collection {
 	font-size: 12px;
 	margin: 25px 0;
@@ -61,14 +71,15 @@ nav, aside {
 
 .content {
 	background: white;
-	size: 80%;
-	margin: 0 10%;
+	size: 90%;
+	margin: 0 5%;
 	padding: 25px;
 }
 
 .main-section {
 	flex-grow: 2;
-	padding: 0 25px;
+	padding: 0 18;
+	max-width: 764;
 }
 
 .main.content {
@@ -78,7 +89,7 @@ nav, aside {
 .filters {
 	border: 1px solid #ddd;
 	padding: 10px 10px 0;
-	margin-bottom: 25px;
+	margin: 25px 0;
 }
 
 .filters h1 {
@@ -91,6 +102,29 @@ nav, aside {
 
 .results h1 {
 	font-size: 1.4em;
+}
+
+.results .active {
+	background: #eee;
+	overflow: hidden;
+}
+
+.results .active:after {
+	content: " ";
+	color: #eee;
+	position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-top: 20.5px solid transparent;
+    border-bottom: 20.5px solid transparent;
+    border-left: 15px solid;
+}
+
+.results .active td:nth-child(2){
+	font-weight: bolder;
+	font-size: 1.1em;
 }
 
 .controls {
@@ -117,6 +151,48 @@ nav, aside {
 
 .results-table {
 	font-size: 11px;
+}
+
+.container-preview {
+	text-align: center;
+	background: #eee;
+	padding: 10px;
+}
+
+.preview {
+	background: #eee;
+}
+
+.container-preview h1 {
+	font-size: 1.2em;
+}
+
+.preview tr {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	height: 25px;
+}
+
+.preview tr:last-child {
+border-bottom: none;
+}
+
+.preview td:nth-child(1) {  
+  font-weight: bolder;
+  padding-right: 5px;
+}
+
+.preview table {
+	font-size: 12px;
+}
+
+.preview img {
+	width: 100%;
+	border-radius: .8vw;
+}
+
+.preview .more-info {
+	margin-top: 5px;
+	font-size: 10px;
 }
 
 footer {
